@@ -2,6 +2,14 @@ body {
     background-color: black;
     color: gold;
 }
-h1 {  
-    color: aquamarine;  
+h1 {
+    color: aquamarine;
+}
+p {
+    background-color: blueviolet;
+    width:fit-content;
+}
+em{
+    background-color:crimson;
+    width:fit-content;
 }
