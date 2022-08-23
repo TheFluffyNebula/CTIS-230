@@ -1,15 +1,43 @@
 body {
     background-color: black;
     color: gold;
+    font-family: Cambria, Georgia, "Book Antiqua", serif;
+    font-size: 1.2em
+    
 }
 h1 {
-    color: aquamarine;
+    color: lightgreen;
+}
+h2{
+    color:black;
+    background-color: white;
+    width: fit-content;
 }
 p {
     background-color: blueviolet;
     width:fit-content;
+    color: aquamarine
 }
 em{
-    background-color:crimson;
     width:fit-content;
+    font-weight: bolder;
+}
+strong{
+    font-weight: bolder;
+    font-family: cursive;
+}
+a{
+    background-color: black;
+}
+a:link{
+    color: white;
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    color: aquamarine;
+}
+a:active{
+    color:blueviolet;
 }
