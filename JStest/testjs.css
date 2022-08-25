@@ -9,3 +9,6 @@ body{
     font-family: Verdana, sans-serif;
     border: 2px dotted brown;
   }
+  button#mybutton{
+    font-size:1.5em;
+  }

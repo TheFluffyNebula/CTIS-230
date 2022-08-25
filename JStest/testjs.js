@@ -13,12 +13,19 @@ ourText.addEventListener("mouseover",onMouseOver); //Type of action, function na
 function onMouseOver(){
   ourText.style.color = "green";
   ourText.style.fontSize = "3em";
-  ourText.style.innerHTML = "And we have changed the text.";
+  ourText.innerHTML = "And we have changed the text.";
 }
 // Need another event listener to respond to the mouse moving off
 ourText.addEventListener("mouseout",onMouseOut);
 function onMouseOut(){
   ourText.style.color = "black";
   ourText.style.fontSize = "1em";
-  ourText.style.innerHTML = "<strong>And we changed it back</strong>";
+  ourText.innerHTML = "<strong>And we changed it back</strong>";
+}
+// Get the button with id mybutton and store it away
+ourbutton = document.getElementById("mybutton");
+// Tell the button which listener is attached to it when the user clicks on it
+ourbutton.addEventListener("click",onClick);
+function onClick(){
+    ourText.innerHTML = "I clicked the button";
 }
