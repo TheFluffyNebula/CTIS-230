@@ -2,27 +2,35 @@ body {
     background-color: black;
     color: gold;
     font-family: Cambria, Georgia, "Book Antiqua", serif;
-    font-size: 1.2em
-    
+    font-size: 1.2em;
+    margin-left: 5%;
+    margin-right: 5%;
 }
-h1 {
+h1,h2 {
     color: lightgreen;
 }
-h2{
-    color:black;
-    background-color: white;
-    width: fit-content;
-}
+
 p {
     /*background-color: blueviolet;*/
     width:fit-content;
-    color: aquamarine
+    color: aquamarine;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+p.spoken{
+    font-style: italic;
+}
+p.novel{
+    font-family: Comic Sans MS, serif;
 }
 em{
     width:fit-content;
     font-weight: bolder;
 }
 strong{
+    font-family:'Courier New', Courier, monospace;
+}
+pre strong{
     font-weight: bolder;
     font-family: cursive;
 }
@@ -40,4 +48,21 @@ a:hover{
 }
 a:active{
     color:blueviolet;
+}
+img#StarSpin{
+    width:80%;
+}
+img#NightSky{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width:200px;
+}
+img#SadBunny{
+    height:200px;
+    float:right;
+    background-color: lavender;
+    margin-right: 2em;
+}
+div.ParagraphOne{
+    border: brown dotted 1px;
 }
