@@ -66,3 +66,14 @@ img#SadBunny{
 div.ParagraphOne{
     border: brown dotted 1px;
 }
+span.letter{
+    color: lightgreen;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+div.letters{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
