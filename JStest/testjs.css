@@ -12,3 +12,7 @@ body{
   button#mybutton{
     font-size:1.5em;
   }
+  img#TWPblue{
+    border: 3px solid green;
+    display: none;
+  }

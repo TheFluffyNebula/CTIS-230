@@ -1,31 +1,47 @@
-//Step 0: What do we want to do? Change the color and the size and the content of the text
-//when the user moves over it and change it back when the user moves off of the text
-//Step 1: Get the element that we want to affect and
-//store it away so that we're ready to respond to the event
 ourText = document.getElementById("newtext");
-//This code asks the douument for the element that has 
-//id newtext and stores the response in something named ourtext
-
-//Step 2: We want to tell ourText to change when the
-//mouse moves over it, so we attach an event listener to ourText called onMouseOver
-ourText.addEventListener("mouseover",onMouseOver); //Type of action, function name
-//Here's our event listener
+ourText.addEventListener("mouseover",onMouseOver); 
 function onMouseOver(){
   ourText.style.color = "green";
   ourText.style.fontSize = "3em";
   ourText.innerHTML = "And we have changed the text.";
 }
-// Need another event listener to respond to the mouse moving off
 ourText.addEventListener("mouseout",onMouseOut);
 function onMouseOut(){
   ourText.style.color = "black";
   ourText.style.fontSize = "1em";
   ourText.innerHTML = "<strong>And we changed it back</strong>";
 }
-// Get the button with id mybutton and store it away
+
+
+
+myBlue = document.getElementById("TWPblue");
 ourbutton = document.getElementById("mybutton");
-// Tell the button which listener is attached to it when the user clicks on it
 ourbutton.addEventListener("click",onClick);
 function onClick(){
     ourText.innerHTML = "I clicked the button";
+    ourText.style.fontSize="2em";
+    myBlue.style.display="block"; //change from None to block to make it appear
+}
+
+
+ourInput = document.getElementById("myinput"); //this contains the new text
+ourHeading = documen.getElementById("header"); //what we're going to modify
+ourInput.addEventListener("change", changeText); //the text in the field changes
+ourInput.addEventListener("blur", changeText); //the text field loses focus
+function changeText(){
+  //Get the text that the user entered
+  newtext = ourInput.value; //we ask ourInput for its value, which is the entered text
+  ourHeading.innerHTML = newtext;
+}
+
+blueImage = document.getElementById("blue");
+blueImage.addEventListener("click",changeImage);
+function changeImage(){
+  blueImage.style.position("absolute");//make the position of the div absolute and 100px from top left corner
+  blueImage.style.top="100px";
+  blueImage.style.left="100px";
+  myBlueImage.style.width="80px";//make the width of the image 80px
+  //not the width of the div bc it won't affect how wide the image is
+  myBlueImage.src="Bunny_Sleeping.png";
+
 }
