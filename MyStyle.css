@@ -57,12 +57,7 @@ img#NightSky{
     margin-bottom: 10px;
     width:200px;
 }
-img#SadBunny{
-    height:200px;
-    float:right;
-    background-color: lavender;
-    margin-right: 2em;
-}
+
 div.ParagraphOne{
     border: brown dotted 1px;
 }
@@ -77,3 +72,42 @@ div.letters{
     align-items: center;
     justify-content: space-evenly;
 }
+
+/*media queries for responsive design*/
+/* Ask the browser to identify the properties of the media that
+the content is being displayed on and change the CSS rules accordingly */
+/* As long as the width of the viewport is less than 750px, implement whatever
+rules are present in this media query */
+@media (max-width: 750px){
+    body{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    h2{
+        width:60%
+    }
+}
+@media (min-width:750){
+    img#SadBunny{
+        height:200px;
+        float:right;
+        background-color: lavender;
+        margin-right: 2em;
+    }
+}
+
+@media screen and (orientation:landscape){
+    body{
+        background-color: lightcyan;
+    }
+    pre.poem{
+        display: none;
+    }
+}
+
+/*@media (min-width:389) and (max-width:391) and
+(min-height:843) and (max-height:845){
+    body{
+        display: none;
+    }
+}*/
