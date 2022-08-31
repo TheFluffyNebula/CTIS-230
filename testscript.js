@@ -1,10 +1,13 @@
 myitem = document.getElementById("firsttest"); //stores the element with id "firsttest" in document as myitem
 thebutton = document.getElementById("thebutton");  
+thebutton2 = document.getElementById("thebutton2");
 otheritem = document.getElementById("buttontest");
+otheritem2 = document.getElementById("buttontest2");
 
 myitem.addEventListener("click", onClick); //sets up a listener where clicking myitem will trigger the function onClick
 myitem.addEventListener("mouseout",normalMyItem);
 thebutton.addEventListener("click", onButtonClick);
+thebutton2.addEventListener("click",onButtonClick2);
 
 function onClick() {  //changes myitem's text to lightgreen
     myitem.style.color = "lightgreen";  
@@ -18,4 +21,9 @@ function normalMyItem(){
 
 function onButtonClick(){
     otheritem.style.color = "red";  
+}
+
+function onButtonClick2(){
+    otheritem2.style.color = "lightgreen";
+    otheritem2.fontSize = "0.8em"
 }
