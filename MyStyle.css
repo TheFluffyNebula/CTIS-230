@@ -73,6 +73,16 @@ div.letters{
     justify-content: space-evenly;
 }
 
+div#largeview {
+    position: fixed;
+    top: 100px;
+    left: 100px;
+}
+
+.dontshow {
+    display:none;
+}
+
 /*media queries for responsive design*/
 /* Ask the browser to identify the properties of the media that
 the content is being displayed on and change the CSS rules accordingly */
