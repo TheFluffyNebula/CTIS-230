@@ -8,6 +8,17 @@ card1 = document.getElementById("card1")
 card1.addEventListener("click", makeBigImage);
 mybigimage.addEventListener("click", hideBigImage);
 
+staticimage = document.getElementById("staticview");
+gifimage = document.getElementById("gifview");
+
+staticimage.addEventListener("mouseover", showGIF);
+gifimage.addeventListener("mouseout", hideGIF);
+
+function showGIF(){
+    gifview.classList.remove("dontshow");
+    staticview.classList.add("dontshow");
+}
+
 //document hides image whenever the user presses any key
 document.addEventListener("keyup", hideBigImage);
 

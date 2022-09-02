@@ -5,6 +5,8 @@ body {
     font-size: 1.2em;
     margin-left: 5%;
     margin-right: 5%;
+    transition-property: background-color;
+    transition-duration: 10s;
 }
 h1,h2 {
     color: lightgreen;
@@ -96,12 +98,16 @@ rules are present in this media query */
     }
 }
 
-@media screen and (orientation:landscape){
-    body{
-        background-color: lightcyan;
-    }
+@media screen and (orientation:landscape){ 
     pre.poem{
-        display: none;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (orientation:portrait){
+    p.novel{
+        font-size: 0.85em
     }
 }
 
