@@ -5,8 +5,6 @@ body {
     font-size: 1.2em;
     margin-left: 5%;
     margin-right: 5%;
-    transition-property: background-color;
-    transition-duration: 10s;
 }
 h1,h2 {
     color: lightgreen;
@@ -88,13 +86,12 @@ rules are present in this media query */
     h2{
         width:60%
     }
-}
-@media (min-width:750){
-    img#SadBunny{
-        height:200px;
-        float:right;
-        background-color: lavender;
-        margin-right: 2em;
+    button.btn2{
+        padding: 10px 10px;
+    }
+    input#myinput{
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 
@@ -102,12 +99,37 @@ rules are present in this media query */
     pre.poem{
         text-align: center;
     }
-    
+    img#SadBunny{
+        height:200px;
+        background-color: lavender;
+        margin-right: 2em;
+    }
+    img#StarSpin{
+        width: 300px;
+    }
 }
 
 @media screen and (orientation:portrait){
     p.novel{
         font-size: 0.85em
+    }
+    img#SadBunny{
+        max-width: 100%;
+        height: auto;
+        float: right;
+    }
+    img#StarSpin{
+        max-width: 100%;
+        height: auto;
+    }
+    img#HappyBunny{
+        max-width: 100%;
+        height: auto;
+        float:right;
+    }
+    img#PaintImage{
+        max-width: 100%;
+        height: auto;
     }
 }
 
